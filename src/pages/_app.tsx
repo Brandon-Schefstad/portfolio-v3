@@ -1,8 +1,5 @@
-import { type AppType } from "next/app";
-
 import React from "react";
 import "~/styles/globals.css";
-import { api } from "~/utils/api";
 
 /**
  * Determines if we are running on server or in client.
@@ -22,8 +19,8 @@ if (process.env.NODE_ENV !== "production" && !getIsServerRendered()) {
   axe(React, ReactDOM, 1000);
 }
 
-const MyApp: AppType = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
 };
 
-export default api.withTRPC(MyApp);
+export default MyApp;
