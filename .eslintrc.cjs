@@ -22,9 +22,9 @@ const config = {
   extends: ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
   rules: {
     "@typescript-eslint/consistent-type-imports": "off",
-    "@typescript-eslint/no-unsafe-argument": "off",
-    "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-argument": 1,
+    "@typescript-eslint/no-unsafe-assignment": 1,
+    "@typescript-eslint/no-unsafe-call": 1,
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unsafe-return": "off",
     "@typescript-eslint/no-unnecessary-type-assertion": "off",

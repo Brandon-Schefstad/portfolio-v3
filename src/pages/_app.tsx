@@ -14,11 +14,16 @@ function getIsServerRendered() {
  * @see https://github.com/dequelabs/react-axe
  */
 if (process.env.NODE_ENV !== "production" && !getIsServerRendered()) {
+  /* eslint @typescript-eslint/no-unsafe-assignment: "off"*/
+  /* eslint @typescript-eslint/no-var-requires: "off"*/
+  /* eslint @typescript-eslint/no-unsafe-call: "off"*/
   const ReactDOM = require("react-dom");
+  //@ts-ignore
   const axe = require("@axe-core/react");
+  //@ts-ignore
   axe(React, ReactDOM, 1000);
 }
-
+//@ts-ignore
 const MyApp = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
 };
