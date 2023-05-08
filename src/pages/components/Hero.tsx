@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Pfp from "../../../public/assets/pfp.png";
 const Hero = () => {
   return (
@@ -6,7 +7,7 @@ const Hero = () => {
         Brandon Schefstad
       </h1>
       <section className="cta relative flex  min-h-[1000px] flex-col ">
-        <Image src={Pfp} alt="Brandon Schefstad laughing" className=""></Image>
+        <Image src={Pfp} alt="Brandon Schefstad laughing"></Image>
         <section className=" absolute bottom-0 z-10  flex w-full flex-col justify-evenly gap-20 bg-white bg-opacity-30 px-6  py-16 font-bold">
           <section className="cta m-auto flex w-full justify-around ">
             <button className=" dark rounded-full border-2 border-solid border-secondary  bg-accent-3  px-4 py-2 dark:border-accent-3 dark:bg-secondary dark:text-accent-3">
