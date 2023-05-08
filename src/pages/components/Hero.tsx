@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Pfp from "../../../public/assets/pfp2.jpg";
+import Pfp from "../../../public/assets/pfp2a.jpg";
 const Hero = () => {
   return (
     <div className=" -z-0 flex min-h-full flex-col gap-24 bg-primary pt-32  text-secondary dark:bg-secondary dark:text-primary">
