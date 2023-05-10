@@ -6,9 +6,10 @@ import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
 import ToggleDisplay from "./components/ToggleDisplay";
-
+//
 const Page = () => {
   const [dark, setDark] = useState(false);
+
   return (
     <div
       className={`relative min-h-screen overflow-x-hidden pl-9 ${
@@ -18,7 +19,7 @@ const Page = () => {
       <Head>
         <title>Brandon Schefstad</title>
       </Head>
-      <ToggleDisplay dark={dark} setDark={() => setDark} />
+      <ToggleDisplay dark={dark} setDark={setDark} />
       <Nav />
       <Hero />
 
