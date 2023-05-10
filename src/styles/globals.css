@@ -80,3 +80,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+.items {
+  flex-basis: auto;
+  align-items: flex-start;
+}
