@@ -1,6 +1,7 @@
 //@ts-nocheck
 const ToggleDisplay = ({ dark, setDark }) => {
   return (
+    /* eslint @typescript-eslint/no-unsafe-return: "off", @typescript-eslint/no-unsafe-call: "off" */
     <div className="absolute top-12" onClick={() => setDark(!dark)}>
       {dark ? (
         <>
