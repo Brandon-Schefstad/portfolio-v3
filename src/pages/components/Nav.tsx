@@ -2,6 +2,7 @@ import { useState } from "react";
 import ToggleDisplay from "./ToggleDisplay";
 
 const Nav = ({ dark, setDark }: { dark: boolean; setDark: any }) => {
+  /* eslint @typescript-eslint/no-unsafe-assignment:off */
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <section className=" gap absolute left-0 top-8 flex w-screen px-8 text-secondary  dark:text-primaryLight lg:flex-row lg:px-32 lg:text-xl">
