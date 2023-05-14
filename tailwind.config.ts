@@ -1,9 +1,13 @@
 import { type Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ["Lilita One", ...defaultTheme.fontFamily.sans],
+      },
       // colors: {
       //   "accent-1": "#A7AABD",
       //   "accent-2": "#EC556B",
@@ -21,7 +25,7 @@ export default {
       colors: {
         "accent-1": "#1010a3",
         "accent-2": "#e0e0e0",
-        "accent-3": "#fccc85",
+        "accent-3": "#f7f7f7",
         primaryLight: "#FFFFFF",
         secondary: "#000000",
       },

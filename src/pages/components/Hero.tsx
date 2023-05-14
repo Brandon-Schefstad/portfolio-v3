@@ -31,7 +31,7 @@ const Hero = () => {
   return (
     <div className="-z-0 flex min-h-full  flex-col gap-24   text-secondary dark:text-primaryLight lg:grid lg:grid-cols-5">
       <section className=" ml-8 lg:col-span-2 ">
-        <h1 className="  text-left  text-5xl font-bold tracking-wide lg:text-left  xl:text-6xl">
+        <h1 className=" text-left font-heading  text-5xl font-bold tracking-wide lg:text-left  xl:text-6xl">
           Hello! I am Brandon Schefstad
         </h1>
         <section className=" mt-4 flex justify-start gap-4 lg:m-auto lg:mt-8 lg:justify-start lg:text-xl ">
@@ -43,9 +43,14 @@ const Hero = () => {
               />
             </button>
             {index != titles.length - 1 ? (
-              <h2 className="col-span-6 text-lg">{titles[index]}</h2>
+              <h2 className=" col-span-6 font-heading text-lg">
+                {titles[index]}
+              </h2>
             ) : (
-              <a className="col-span-6 text-lg" href="youtube.com">
+              <a
+                className=" col-span-6 font-heading text-lg"
+                href="youtube.com"
+              >
                 {" "}
                 {titles[index]}
               </a>
