@@ -1,6 +1,6 @@
 const CTA = () => {
   return (
-    <section className="  bottom-0 z-10 ml-[-2.5rem] bg-primaryLight pt-24 font-semibold dark:bg-secondary">
+    <section className="  bottom-0 z-10 ml-[-2.5rem] bg-primaryLight pt-48 font-semibold dark:bg-secondary">
       <section className="cta   flex justify-evenly gap-4 py-4 dark:bg-primaryLight">
         <a href="#_" className="group relative inline-block text-lg ">
           <span className="relative z-10 block overflow-hidden rounded-xl border-[3px]  border-solid border-black  px-5  py-3  font-semibold   leading-tight text-secondary  transition-colors duration-300  ease-out  hover:border-black active:translate-y-1  group-hover:text-primaryLight dark:bg-secondary ">
