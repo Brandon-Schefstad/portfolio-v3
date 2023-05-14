@@ -23,11 +23,11 @@ export default {
       //   secondary: "#274C43",
       // },
       colors: {
-        "accent-1": "#1010a3",
-        "accent-2": "#e0e0e0",
-        "accent-3": "#f7f7f7",
-        primaryLight: "#FFFFFF",
-        secondary: "#000000",
+        "accent-1": "#e9e9e9",
+        "accent-2": "#B9CCC2",
+        "accent-3": "#2f4937",
+        primaryLight: "#FCFCFC",
+        secondary: "#213027",
       },
       // colors: {
       //   "accent-1": "#F1F199",

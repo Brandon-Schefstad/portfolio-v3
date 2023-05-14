@@ -29,32 +29,32 @@ const Hero = () => {
   ];
 
   return (
-    <div className="-z-0 flex min-h-full  flex-col gap-24   text-secondary dark:text-primaryLight lg:grid lg:grid-cols-5">
-      <section className=" ml-8 lg:col-span-2 ">
-        <h1 className=" text-left font-heading  text-5xl font-bold tracking-wide lg:text-left  xl:text-6xl">
+    <div className="-z-0 flex min-h-full  flex-col gap-24   text-secondary dark:text-primaryLight lg:grid lg:grid-cols-7">
+      <section className=" ml-8 lg:col-span-4 ">
+        <h1 className=" text-left font-heading  text-5xl font-bold tracking-wide lg:pr-64 lg:text-left xl:text-6xl">
           Hello! I am Brandon Schefstad
         </h1>
-        <section className=" mt-4 flex justify-start gap-4 lg:m-auto lg:mt-8 lg:justify-start lg:text-xl ">
-          <section className="grid min-w-[80%] grid-cols-8 gap-4 lg:min-w-[70%]">
-            <button aria-label="refresh" onClick={() => getNewTitle(index)}>
-              <FontAwesomeIcon
-                icon={faRefresh}
-                className="col-span-2 h-[75%] self-center pt-[4px] lg:m-auto"
-              />
-            </button>
+        <section className=" mt-4 flex   lg:mt-8  lg:text-xl ">
+          <section className="grid   gap-4  ">
             {index != titles.length - 1 ? (
-              <h2 className=" col-span-6 font-heading text-lg">
+              <h2 className="  font-heading text-lg lg:text-3xl">
                 {titles[index]}
               </h2>
             ) : (
               <a
-                className=" col-span-6 font-heading text-lg"
+                className=" font-heading text-lg lg:text-3xl"
                 href="youtube.com"
               >
                 {" "}
                 {titles[index]}
               </a>
-            )}
+            )}{" "}
+            <button aria-label="refresh" onClick={() => getNewTitle(index)}>
+              <FontAwesomeIcon
+                icon={faRefresh}
+                className="max-h-[25px] min-h-[20px]  pt-[4px] "
+              />
+            </button>
           </section>
         </section>
       </section>
@@ -62,7 +62,7 @@ const Hero = () => {
       <Image
         src={Pfp}
         alt="Brandon Schefstad laughing"
-        className=" w-[80%] self-end rounded-l-lg lg:col-span-3 lg:row-span-2 lg:place-self-end "
+        className=" self-end rounded-l-lg lg:col-span-3 lg:row-span-2 lg:place-self-end "
       ></Image>
     </div>
   );

@@ -11,43 +11,61 @@ const Projects = () => {
       <h1 className=" col-span-7 ml-8  flex flex-col gap-8 font-heading  text-4xl font-bold text-secondary dark:text-primaryLight lg:pb-12 lg:text-6xl">
         Projects
       </h1>
-      <section className="projects mx-4 grid-cols-7 flex-col rounded-xl border-secondary  bg-primaryLight  p-8   shadow-lg shadow-secondary dark:bg-secondary dark:shadow-blue-200  lg:grid  ">
+      <section className="projects mx-4 grid-cols-7 flex-col rounded-xl border-secondary  bg-primaryLight  p-8   shadow-lg shadow-secondary dark:bg-accent-3 dark:shadow-accent-2   ">
         <section
-          className="  flex flex-col gap-16 rounded-xl dark:bg-secondary lg:overflow-hidden lg:p-12 "
+          className="  flex flex-col gap-16 rounded-xl  lg:overflow-hidden lg:p-12 "
           tabIndex={0}
         >
-          <section className="flex flex-col gap-8  text-secondary dark:text-primaryLight ">
-            <h3 className="text-2xl font-semibold   underline lg:text-4xl">
+          <section className="flex flex-col gap-8  text-secondary dark:text-primaryLight   lg:col-span-7">
+            <h3 className="text-2xl font-semibold underline  lg:text-4xl">
               ESE-At-A-Glance
             </h3>
-            <span className="mx-4 tracking-tighter">
-              Full stack application for teachers of students with disabilities.
-              Teachers can create student profiles to input their accommodations
-              and IEP information
-            </span>
-            <ul className=" col-span-3  grid w-full  grid-cols-3 gap-2   p-2 text-center text-xs text-black lg:grid lg:p-12  lg:text-center">
-              <li className="rounded-md border-2 border-solid border-accent-1 bg-blue-200 py-2 font-bold text-accent-1">
-                ReactJS
-              </li>
-              <li className=" rounded-md border-2 border-solid border-accent-1 bg-blue-200 py-2 font-bold text-accent-1">
-                Figma
-              </li>
-              <li className="rounded-md border-2 border-solid border-accent-1 bg-blue-200 py-2 font-bold text-accent-1">
+            <section className="mx-4 tracking-tighter lg:text-xl lg:tracking-normal">
+              <h4 className="my-4 text-xl lg:text-3xl">Problem Description</h4>
+              <span>
+                All students with a disability in America are given case
+                management services by the school. Part of this involves
+                creating an IEP (Individualized Education Plan). This is a
+                lengthy legal document detailing the student's current progress,
+                accommodations, and future goals. Case managers (often teachers
+                themselves) are responsible for communicating this IEP to all
+                relevant personnel. This is very time-consuming, and it ate away
+                at much of my time my first year teaching. I wanted to come up
+                with a solution.
+              </span>
+              <h4 className="my-4 text-xl lg:text-3xl">Tech Solution</h4>
+              <span>
+                Using MERN stack, I developed a fullstack application where case
+                managers can create student profiles, search the current
+                database, and modify student accommodations. This allows the
+                case manager to input information once. Other personnel can
+                search for the data they need.{" "}
+              </span>
+            </section>
+            <ul className=" lg:tracking-norma  col-span-3 grid w-full grid-cols-3  gap-2 p-2  text-center  text-xs text-black lg:grid lg:gap-6 lg:p-12 lg:text-center  lg:text-xl">
+              <li className="rounded-md border-2 border-solid border-accent-1 bg-accent-3 py-2 font-bold text-accent-1">
                 MongoDB
               </li>
-              <li className="rounded-md border-2 border-solid border-accent-1 bg-blue-200 py-2 font-bold text-accent-1">
+              <li className=" rounded-md border-2 border-solid border-accent-1 bg-accent-3 py-2 font-bold text-accent-1">
+                Express
+              </li>
+              <li className="rounded-md border-2 border-solid border-accent-1 bg-accent-3 py-2 font-bold text-accent-1">
+                ReactJS
+              </li>
+              <li className="rounded-md border-2 border-solid border-accent-1 bg-accent-3 py-2 font-bold text-accent-1">
                 NodeJS
               </li>
-              <li className="rounded-md border-2 border-solid border-accent-1 bg-blue-200 py-2 font-bold text-accent-1">
-                TailwindCSS
+              <li className=" rounded-md border-2 border-solid border-accent-1 bg-accent-3 py-2 font-bold text-accent-1">
+                Figma
               </li>
-              <li className=" rounded-md border-2 border-solid border-accent-1 bg-blue-200 py-2 font-bold text-accent-1">
-                Express
+
+              <li className="rounded-md border-2 border-solid border-accent-1 bg-accent-3 py-2 font-bold text-accent-1">
+                TailwindCSS
               </li>
             </ul>
 
-            <section className="flex flex-col gap-4 rounded-xl bg-secondary p-4 text-primaryLight dark:bg-accent-3 dark:text-secondary">
-              <h2 className=" col-span-3 font-heading  text-2xl font-semibold ">
+            <section className="flex flex-col gap-4 rounded-xl bg-accent-2 p-4  dark:bg-accent-3 dark:text-accent-1 lg:gap-16 lg:p-16">
+              <h2 className=" col-span-3 font-heading  text-2xl font-semibold  lg:mt-[0rem]  lg:text-4xl ">
                 Gallery
               </h2>
               <Image

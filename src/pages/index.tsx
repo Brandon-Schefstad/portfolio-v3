@@ -10,7 +10,7 @@ const Page = () => {
 
   return (
     <div
-      className={` m-auto min-h-screen overflow-x-hidden  pb-16 pt-48 lg:px-64 ${
+      className={` m-auto min-h-screen overflow-x-hidden  pb-16 pt-48 lg:px-24 xl:px-64 ${
         dark ? "bg-secondary" : "bg-primaryLight"
       }  ${dark ? " dark" : ""}`}
     >
