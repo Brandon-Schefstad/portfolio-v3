@@ -26,7 +26,7 @@ const config = {
     "@typescript-eslint/no-unsafe-assignment": 1,
     "@typescript-eslint/no-unsafe-call": 1,
     "@typescript-eslint/no-unsafe-member-access": "off",
-    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-unsafe-return": 1,
     "@typescript-eslint/no-unnecessary-type-assertion": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "react/jsx-key": "off",
