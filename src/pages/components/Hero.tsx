@@ -2,7 +2,7 @@ import { faRefresh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useState } from "react";
-import Pfp from "../../public/assets/pfp2a.jpg";
+import Pfp from "../../../public/assets/pfp2a.jpg";
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -29,7 +29,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className=" -z-0 flex min-h-full flex-col items-end gap-24  pt-32  text-secondary dark:text-primaryLight">
+    <div className=" dark:text-primaryLight -z-0 flex min-h-full flex-col items-end  gap-24  pt-32 text-secondary">
       <section className=" ">
         <h1 className="title m w-[50%] font-[Abril-Fatface] text-6xl font-bold ">
           Brandon Schefstad
