@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useState } from "react";
-import CTA from "./components/CTA";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
@@ -12,7 +11,7 @@ const Page = () => {
 
   return (
     <div
-      className={`relative min-h-screen overflow-x-hidden pl-9 ${
+      className={`relative m-auto min-h-screen overflow-x-hidden pl-9  lg:px-64 ${
         dark ? "bg-secondary" : "bg-primaryLight"
       }  ${dark ? " dark" : ""}`}
     >
@@ -23,8 +22,7 @@ const Page = () => {
       <Nav />
       <Hero />
 
-      <section className="grid gap-32">
-        <CTA />
+      <section className="mt-24 flex flex-col gap-32 pr-4 ">
         <Technologies />
         <Projects />
       </section>
