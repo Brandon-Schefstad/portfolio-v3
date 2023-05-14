@@ -25,7 +25,7 @@ if (process.env.NODE_ENV !== "production" && !getIsServerRendered()) {
 }
 //@ts-ignore
 const MyApp = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+  return <Component {...pageProps} className={"relative"} />;
 };
 
 export default MyApp;
