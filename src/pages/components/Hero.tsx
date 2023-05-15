@@ -32,7 +32,7 @@ const Hero = () => {
     <div className="-z-0 flex min-h-full  flex-col gap-24   text-secondary dark:text-primaryLight lg:grid lg:grid-cols-7">
       <section className=" ml-8 lg:col-span-4 ">
         <h1 className=" pr-8  text-left font-heading text-5xl font-bold tracking-wide lg:pr-64 lg:text-left xl:text-6xl">
-          Hello! I am Brandon Schefstad
+          Hello! I am Brandon Schefstad :)
         </h1>
         <section className=" mt-4 flex gap-8  lg:mt-8  lg:text-xl ">
           <button aria-label="refresh" onClick={() => getNewTitle(index)}>
