@@ -15,7 +15,6 @@ const Projects = () => {
         Projects
       </h1>
       {/* ESEAAG */}
-      \
       <ProjectCard
         title={"ESE-At-A-Glance"}
         problem={
