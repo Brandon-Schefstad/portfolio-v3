@@ -46,7 +46,10 @@ const Hero = () => {
               {titles[index]}
             </h2>
           ) : (
-            <a className=" font-heading text-lg lg:text-3xl" href="youtube.com">
+            <a
+              className=" font-heading text-lg lg:text-3xl"
+              href="https://www.youtube.com"
+            >
               {" "}
               {titles[index]}
             </a>
