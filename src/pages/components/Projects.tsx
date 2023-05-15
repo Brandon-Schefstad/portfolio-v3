@@ -1,9 +1,9 @@
+import blackstaff1 from "../../../public/assets/Blackstaff/1.png";
+import blackstaff2 from "../../../public/assets/Blackstaff/2.png";
+import blackstaff3 from "../../../public/assets/Blackstaff/3.png";
 import ESEAAG1 from "../../../public/assets/ESEAAG/1.png";
 import ESEAAG2 from "../../../public/assets/ESEAAG/2.png";
 import ESEAAG3 from "../../../public/assets/ESEAAG/3.png";
-import blackstaff1 from "../../../public/assets/blackstaff/1.png";
-import blackstaff2 from "../../../public/assets/blackstaff/2.png";
-import blackstaff3 from "../../../public/assets/blackstaff/3.png";
 
 import ProjectCard from "./ProjectCard";
 //@ts-nocheck
