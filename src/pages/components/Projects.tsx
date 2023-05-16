@@ -11,23 +11,10 @@ const Projects = () => {
   return (
     <section className="flex flex-col gap-12">
       {" "}
-      <h1 className=" col-span-7 ml-8  flex flex-col gap-8 font-heading  text-4xl font-bold text-secondary dark:text-primaryLight lg:pb-12 lg:text-6xl">
+      <h1 className=" col-span-7 ml-8  flex flex-col gap-8 font-heading  text-5xl font-bold text-secondary dark:text-primaryLight lg:pb-12 lg:text-6xl">
         Projects
       </h1>
       {/* ESEAAG */}
-      <ProjectCard
-        title={"ESE-At-A-Glance"}
-        problem={
-          "All students with a disability in America are given case management services by the school. Part of this involves creating an IEP (Individualized Education Plan). This is a lengthy legal document detailing the student's current progress, accommodations, and future goals. Case managers (often teachers themselves) are responsible for communicating this IEP to all relevant personnel. This is very time-consuming, and it ate away at much of my time my first year teaching. I wanted to come up with a solution."
-        }
-        tech={["MongoDb", " React", "Express", "NodeJS", "Figma", "Tailwind"]}
-        solution={
-          "Using MERN stack, I developed a fullstack application where case managers can create student profiles, search the current database, and modify student accommodations. This allows the case manager to input information once. Other personnel can search for the data they need."
-        }
-        src1={ESEAAG1.src}
-        src2={ESEAAG2.src}
-        src3={ESEAAG3.src}
-      />
       <ProjectCard
         title={"Blackstaff Spell Emporium"}
         problem={
@@ -40,6 +27,23 @@ const Projects = () => {
         src1={blackstaff2.src}
         src2={blackstaff1.src}
         src3={blackstaff3.src}
+        liveLink={"https://ese-at-a-glance.netlify.app/"}
+        repoLink={"https://github.com/Brandon-Schefstad/ESEAtAGlance"}
+      />
+      <ProjectCard
+        title={"ESE-At-A-Glance"}
+        problem={
+          "All students with a disability in America are given case management services by the school. Part of this involves creating an IEP (Individualized Education Plan). This is a lengthy legal document detailing the student's current progress, accommodations, and future goals. Case managers (often teachers themselves) are responsible for communicating this IEP to all relevant personnel. This is very time-consuming, and it ate away at much of my time my first year teaching. I wanted to come up with a solution."
+        }
+        tech={["MongoDb", " React", "Express", "NodeJS", "Figma", "Tailwind"]}
+        solution={
+          "Using MERN stack, I developed a fullstack application where case managers can create student profiles, search the current database, and modify student accommodations. This allows the case manager to input information once. Other personnel can search for the data they need."
+        }
+        src1={ESEAAG1.src}
+        src2={ESEAAG2.src}
+        src3={ESEAAG3.src}
+        liveLink={"https://ese-at-a-glance.netlify.app/"}
+        repoLink={"https://github.com/Brandon-Schefstad/ESEAtAGlance"}
       />
     </section>
   );

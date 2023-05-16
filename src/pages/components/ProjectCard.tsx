@@ -7,6 +7,8 @@ const ProjectCard = ({
   problem,
   solution,
   tech,
+  liveLink,
+  repoLink,
 }: {
   src1: string;
   src2: string;
@@ -15,6 +17,8 @@ const ProjectCard = ({
   problem: string;
   solution: string;
   tech: string[];
+  liveLink: string;
+  repoLink: string;
 }) => {
   return (
     <section className="projects mx-4 grid-cols-7 flex-col rounded-xl border-secondary bg-primaryLight  p-8  shadow-inner  shadow-secondary dark:bg-accent-3 dark:shadow-accent-2   ">
@@ -22,11 +26,29 @@ const ProjectCard = ({
         className="  flex flex-col gap-16 rounded-xl  lg:overflow-hidden lg:p-12 "
         tabIndex={0}
       >
-        <section className="flex flex-col gap-8  text-secondary dark:text-primaryLight   lg:col-span-7">
-          <h3 className="text-2xl font-semibold underline  lg:text-4xl">
+        <section className="flex flex-col gap-8 tracking-tight  text-secondary dark:text-primaryLight   lg:col-span-7">
+          <h3 className="text-2xl  font-semibold underline  lg:text-4xl">
             {title}
           </h3>
+
           <section className="mx-2 flex flex-col gap-8 tracking-tighter lg:text-xl lg:tracking-normal">
+            <section className="links">
+              <h4 className="my-4 text-xl lg:text-3xl">Links</h4>
+              <section className="grid grid-cols-2 justify-start gap-4 text-center text-base text-secondary">
+                <a
+                  href={liveLink}
+                  className="pxl-4 rounded-xl bg-highlight py-2 font-bold "
+                >
+                  Live Site
+                </a>
+                <a
+                  href={repoLink}
+                  className="rounded-xl  bg-highlight px-4 py-2 font-bold "
+                >
+                  Repo
+                </a>
+              </section>{" "}
+            </section>
             <section className="problem">
               <h4 className="my-4 text-xl lg:text-3xl">Problem Description</h4>
               <span>{problem}</span>
@@ -49,7 +71,6 @@ const ProjectCard = ({
               <></>
             )}
           </ul>
-
           <section className="flex flex-col gap-4 rounded-xl bg-accent-1 p-4  dark:bg-accent-3 dark:text-accent-1 lg:gap-16 lg:p-16">
             <h2 className=" col-span-3 font-heading  text-2xl font-semibold  lg:mt-[0rem]  lg:text-4xl ">
               Gallery

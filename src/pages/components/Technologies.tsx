@@ -1,7 +1,7 @@
 const Technologies = () => {
   return (
     <section className="min-w-full">
-      <h2 className=" ml-8 pb-12 font-heading  text-4xl font-bold  text-secondary dark:text-primaryLight lg:text-6xl">
+      <h2 className=" ml-8 pb-12 font-heading  text-5xl font-bold  text-secondary dark:text-primaryLight lg:text-6xl">
         Technologies
       </h2>
       <section className="intro mx-4  flex flex-col gap-2 rounded-xl bg-accent-2  p-4 text-lg font-medium text-secondary dark:bg-white   lg:px-16 lg:py-14  ">

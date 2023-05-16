@@ -28,6 +28,7 @@ export default {
         "accent-3": "#2f4937",
         primaryLight: "#FCFCFC",
         secondary: "#213027",
+        highlight: "#FFC619",
       },
       // colors: {
       //   "accent-1": "#F1F199",
