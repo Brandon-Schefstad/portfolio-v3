@@ -2,7 +2,7 @@
 const ToggleDisplay = ({ dark, setDark }) => {
   return (
     /* eslint @typescript-eslint/no-unsafe-return: "off", @typescript-eslint/no-unsafe-call: "off" */
-    <div className="" onClick={() => setDark(!dark)}>
+    <div className="grid" onClick={() => setDark(!dark)}>
       {dark ? (
         <>
           <button

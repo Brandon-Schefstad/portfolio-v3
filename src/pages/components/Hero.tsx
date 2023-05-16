@@ -1,5 +1,3 @@
-import { faRefresh } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useState } from "react";
 import Pfp from "../../../public/assets/pfp2a.jpg";
@@ -29,17 +27,22 @@ const Hero = () => {
   ];
 
   return (
-    <div className="-z-0 flex min-h-full  flex-col gap-24   text-secondary dark:text-primaryLight lg:grid lg:grid-cols-7">
+    <div className="-z-0 flex min-h-full flex-col gap-24 pt-40  text-secondary dark:text-primaryLight lg:grid lg:grid-cols-7">
       <section className=" ml-8 lg:col-span-4 ">
         <h1 className=" pr-8  text-left font-heading text-5xl font-bold tracking-wide lg:pr-64 lg:text-left xl:text-6xl">
           Hello! I am Brandon Schefstad
         </h1>
         <section className=" mt-4 flex gap-8  lg:mt-8  lg:text-xl ">
           <button aria-label="refresh" onClick={() => getNewTitle(index)}>
-            <FontAwesomeIcon
-              icon={faRefresh}
-              className="max-h-[25px] min-h-[20px]  pt-[4px] "
-            />
+            <svg
+              className="fill-secondary transition-transform duration-300 hover:rotate-180 dark:fill-primaryLight "
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              height={30}
+            >
+              <path d="M512 192a320 320 0 1 0 285.12 465.408 32 32 0 0 1 56.96 29.184 384 384 0 1 1-61.312-436.608l48.64-48.64A32 32 0 0 1 896 224v128a31.872 31.872 0 0 1-32 32h-128a31.872 31.872 0 0 1-22.656-54.656l34.112-34.112A319.616 319.616 0 0 0 512 192z" />
+            </svg>
           </button>
           {index != titles.length - 1 ? (
             <h2 className="  font-heading text-lg lg:text-3xl">
