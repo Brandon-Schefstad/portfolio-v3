@@ -28,7 +28,7 @@ const Hero = () => {
 
   return (
     <div className="-z-0 flex min-h-full flex-col gap-24 pt-32 text-secondary  dark:text-primaryLight lg:grid lg:grid-cols-7 lg:pt-48">
-      <section className=" ml-8 lg:col-span-4 ">
+      <section className=" ml-4 lg:col-span-4 ">
         <h1 className=" pr-8  text-left font-heading text-5xl font-bold tracking-wide lg:pr-64 lg:text-left xl:text-6xl">
           Hello! I am Brandon Schefstad
         </h1>

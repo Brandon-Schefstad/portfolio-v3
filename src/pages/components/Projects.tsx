@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <section className="flex flex-col gap-12">
       {" "}
-      <h1 className=" col-span-7 ml-8  flex flex-col gap-8 font-heading  text-5xl font-bold text-secondary dark:text-primaryLight lg:pb-12 lg:text-6xl">
+      <h1 className=" col-span-7 ml-4  flex flex-col gap-8 font-heading  text-5xl font-bold text-secondary dark:text-primaryLight lg:pb-12 lg:text-6xl">
         Projects
       </h1>
       {/* ESEAAG */}

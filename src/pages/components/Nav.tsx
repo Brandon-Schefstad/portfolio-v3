@@ -13,16 +13,13 @@ const Nav = ({ dark, setDark }: { dark: boolean; setDark: any }) => {
       <ToggleDisplay dark={dark} setDark={setDark} />
 
       <section className=" text-md flex w-full items-end  justify-between px-0 font-semibold tracking-wider sm:text-lg md:pr-12 lg:pr-24 xl:pr-32">
-        <span className="hover:cursor-pointer">
-          <a href="mailto:bschefstad@gmail.com" tabIndex={0}>
-            Hire Me
-          </a>
-        </span>
+        <a tabIndex={0} href="mailto:bschefstad@gmail.com">
+          Hire Me
+        </a>
+
         <div className="divider divider-horizontal"></div>
-        <span className="hover:cursor-pointer">
-          <a href={"./Brandon Schefstad - Resume.pdf"} tabIndex={0}>
-            See My Resume
-          </a>
+        <span tabIndex={0} className="hover:cursor-pointer">
+          <a href={"./Brandon Schefstad - Resume.pdf"}>See My Resume</a>
         </span>
       </section>
     </section>

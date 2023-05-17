@@ -21,12 +21,12 @@ const ProjectCard = ({
   repoLink: string;
 }) => {
   return (
-    <section className="projects mx-4 grid-cols-7 flex-col rounded-xl border-secondary bg-primaryLight  p-8  shadow-inner  shadow-secondary dark:bg-accent-3 dark:shadow-accent-2   ">
+    <section className="projects mx-4 grid-cols-7 flex-col rounded-xl border-secondary bg-primaryLight  p-8  text-secondary  shadow-inner shadow-secondary dark:bg-accent-3 dark:text-accent-3 dark:shadow-accent-2   ">
       <section
         className="  flex flex-col gap-16 rounded-xl  lg:overflow-hidden lg:p-12 "
         tabIndex={0}
       >
-        <section className="flex flex-col gap-8 tracking-tight  text-secondary dark:text-primaryLight   lg:col-span-7">
+        <section className="flex flex-col gap-8 tracking-tight  dark:text-primaryLight   lg:col-span-7">
           <h3 className="text-2xl  font-semibold underline  lg:text-4xl">
             {title}
           </h3>
@@ -58,7 +58,7 @@ const ProjectCard = ({
               <span>{solution}</span>
             </section>
           </section>
-          <ul className=" lg:tracking-norma  col-span-3 grid w-full grid-cols-3  gap-2 p-2  text-center  text-xs text-black lg:grid lg:gap-6 lg:p-12 lg:text-center  lg:text-xl">
+          <ul className=" lg:tracking-norma  col-span-3 grid w-full grid-cols-3  gap-2 p-2  text-center  text-xs  lg:grid lg:gap-6 lg:p-12 lg:text-center  lg:text-xl">
             {tech ? (
               tech.map((techTool) => {
                 return (
