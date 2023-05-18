@@ -63,6 +63,7 @@ const Hero = () => {
       <Image
         src={Pfp}
         alt="Brandon Schefstad laughing"
+        priority={true}
         className=" self-center px-4  lg:col-span-3 lg:row-span-2 lg:place-self-end lg:rounded-l-lg "
       ></Image>
     </div>

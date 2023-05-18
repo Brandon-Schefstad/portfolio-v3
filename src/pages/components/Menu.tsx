@@ -1,12 +1,12 @@
 const Menu = () => {
   return (
     <section className="    flex  justify-evenly rounded-xl  bg-accent-2 fill-accent-3 p-4 dark:bg-accent-1 ">
-      <a href="https://www.google.com" className="  ">
+      <a href="https://www.google.com" aria-label="My Twitter" className="  ">
         <svg
-          clip-rule="evenodd"
-          fill-rule="evenodd"
-          stroke-linejoin="round"
-          stroke-miterlimit="2"
+          clipRule="evenodd"
+          fillRule="evenodd"
+          strokeLinejoin="round"
+          strokeMiterlimit="2"
           viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404"
           xmlns="http://www.w3.org/2000/svg"
           height={30}
@@ -14,11 +14,11 @@ const Menu = () => {
         >
           <path
             d="m154.729 400c185.669 0 287.205-153.876 287.205-287.312 0-4.37-.089-8.72-.286-13.052a205.304 205.304 0 0 0 50.352-52.29c-18.087 8.044-37.55 13.458-57.968 15.899 20.841-12.501 36.84-32.278 44.389-55.852a202.42 202.42 0 0 1 -64.098 24.511c-18.42-19.628-44.644-31.904-73.682-31.904-55.744 0-100.948 45.222-100.948 100.965 0 7.925.887 15.631 2.619 23.025-83.895-4.223-158.287-44.405-208.074-105.504a100.739 100.739 0 0 0 -13.668 50.754c0 35.034 17.82 65.961 44.92 84.055a100.172 100.172 0 0 1 -45.716-12.63c-.015.424-.015.837-.015 1.29 0 48.903 34.794 89.734 80.982 98.986a101.036 101.036 0 0 1 -26.617 3.553c-6.493 0-12.821-.639-18.971-1.82 12.851 40.122 50.115 69.319 94.296 70.135-34.549 27.089-78.07 43.224-125.371 43.224a204.9 204.9 0 0 1 -24.078-1.399c44.674 28.645 97.72 45.359 154.734 45.359"
-            fill-rule="nonzero"
+            fillRule="nonzero"
           />
         </svg>
       </a>
-      <a href="https://www.google.com" className=" om">
+      <a href="https://www.google.com" aria-label="My Linkedin" className=" om">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 256 256"
@@ -33,7 +33,7 @@ const Menu = () => {
           </g>
         </svg>
       </a>
-      <a href="https://www.github.com">
+      <a href="https://www.github.com" aria-label="My Github">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="30"
@@ -47,15 +47,19 @@ const Menu = () => {
           </g>
         </svg>
       </a>
-      <a className="rounded-full bg-primaryLight" href="gmail.com ">
+      <a
+        className="rounded-full bg-primaryLight"
+        aria-label="Send me an email"
+        href="gmail.com "
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          clip-rule="evenodd"
-          fill-rule="evenodd"
+          clipRule="evenodd"
+          fillRule="evenodd"
           height="30"
-          image-rendering="optimizeQuality"
-          shape-rendering="geometricPrecision"
-          text-rendering="geometricPrecision"
+          imageRendering="optimizeQuality"
+          shapeRendering="geometricPrecision"
+          textRendering="geometricPrecision"
           viewBox="0 0 3000 3000"
         >
           <path d="M1500 0c828 0 1500 672 1500 1500s-672 1500-1500 1500S0 2328 0 1500 672 0 1500 0zm751 902l-1456-4 728 578zm-900 735l-636-500v950h1573v-930l-590 482c-200 163-140 160-347-2zM723 716h1569c127 0 230 104 230 230v1100c0 127-104 230-230 230H723c-127 0-230-104-230-230V946c0-127 104-230 230-230z" />
