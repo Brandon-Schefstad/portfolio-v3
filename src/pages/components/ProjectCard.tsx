@@ -9,6 +9,7 @@ const ProjectCard = ({
   tech,
   liveLink,
   repoLink,
+  id,
 }: {
   src1: string;
   src2: string;
@@ -19,21 +20,25 @@ const ProjectCard = ({
   tech: string[];
   liveLink: string;
   repoLink: string;
+  id: number;
 }) => {
   return (
-    <section className="projects mx-4 grid-cols-7 flex-col rounded-xl border-secondary bg-primaryLight  p-8  text-secondary  shadow-inner shadow-secondary dark:bg-accent-3 dark:text-accent-3 dark:shadow-accent-2   ">
+    <section
+      key={id}
+      className="projects mx-4 grid-cols-7 flex-col rounded-xl border-secondary bg-primaryLight  p-8  shadow-inner  shadow-secondary dark:bg-accent-3 dark:shadow-accent-2   "
+    >
       <section
         className="  flex flex-col gap-16 rounded-xl  lg:overflow-hidden lg:p-12 "
         tabIndex={0}
       >
-        <section className="flex flex-col gap-8 tracking-tight  dark:text-primaryLight   lg:col-span-7">
-          <h3 className="text-2xl  font-semibold underline  lg:text-4xl">
+        <section className="flex flex-col gap-8 tracking-tight  text-secondary dark:text-primaryLight   lg:col-span-7">
+          <h2 className="text-2xl  font-semibold underline  lg:text-4xl">
             {title}
-          </h3>
+          </h2>
 
           <section className="mx-2 flex flex-col gap-8 tracking-tighter lg:text-xl lg:tracking-normal">
             <section className="links">
-              <h4 className="my-4 text-xl lg:text-3xl">Links</h4>
+              <h3 className="my-4 text-xl lg:text-3xl">Links</h3>
               <section className="grid grid-cols-2 justify-start gap-4 text-center text-base text-secondary">
                 <a
                   href={liveLink}
@@ -50,19 +55,22 @@ const ProjectCard = ({
               </section>{" "}
             </section>
             <section className="problem">
-              <h4 className="my-4 text-xl lg:text-3xl">Problem Description</h4>
+              <h3 className="my-4 text-xl lg:text-3xl">Problem Description</h3>
               <span>{problem}</span>
             </section>
             <section className="solution">
-              <h4 className="my-4 text-xl lg:text-3xl">Tech Solution</h4>
+              <h3 className="my-4 text-xl lg:text-3xl">Tech Solution</h3>
               <span>{solution}</span>
             </section>
           </section>
           <ul className=" lg:tracking-norma  col-span-3 grid w-full grid-cols-3  gap-2 p-2  text-center  text-xs  lg:grid lg:gap-6 lg:p-12 lg:text-center  lg:text-xl">
             {tech ? (
-              tech.map((techTool) => {
+              tech.map((techTool, index) => {
                 return (
-                  <li className="rounded-md border-2 border-solid border-accent-1 bg-accent-3 py-2 font-bold text-accent-1">
+                  <li
+                    key={index}
+                    className="rounded-md border-2 border-solid border-accent-1 bg-accent-3 py-2 font-bold text-accent-1"
+                  >
                     {techTool}
                   </li>
                 );

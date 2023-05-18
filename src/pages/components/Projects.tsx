@@ -16,6 +16,7 @@ const Projects = () => {
       </h1>
       {/* ESEAAG */}
       <ProjectCard
+        id={1}
         title={"Blackstaff Spell Emporium"}
         problem={
           "My Dungeons and Dragons group wanted to incorporate a list of spells (roughly 900 of them) that only came in a pdf. The catch? The spells were organized in alphabetical order, and did not tell you which class could take it!   "
@@ -31,6 +32,7 @@ const Projects = () => {
         repoLink={"https://github.com/Brandon-Schefstad/ESEAtAGlance"}
       />
       <ProjectCard
+        id={2}
         title={"ESE-At-A-Glance"}
         problem={
           "All students with a disability in America are given case management services by the school. Part of this involves creating an IEP (Individualized Education Plan). This is a lengthy legal document detailing the student's current progress, accommodations, and future goals. Case managers (often teachers themselves) are responsible for communicating this IEP to all relevant personnel. This is very time-consuming, and it ate away at much of my time my first year teaching. I wanted to come up with a solution."
