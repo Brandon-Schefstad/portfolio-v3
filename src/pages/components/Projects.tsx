@@ -17,11 +17,11 @@ const Projects = () => {
       {/* ESEAAG */}
       <ProjectCard
         id={1}
-        title={"Blackstaff Spell Emporium"}
+        title={"Blackstaff Spell Emporium (WIP)"}
         problem={
           "My Dungeons and Dragons group wanted to incorporate a list of spells (roughly 900 of them) that only came in a pdf. The catch? The spells were organized in alphabetical order, and did not tell you which class could take it!   "
         }
-        tech={["NextJS", "Typescript", "PrismaORM"]}
+        tech={["NextJS", "Typescript", "PrismaORM", "Figma", "PostgreSQL"]}
         solution={
           "This site organizes all of those spells by player class. This way users can more quickly identify what spells are avaialble to them without needing to scroll through the PDF back and forth.  Seeding the database involved initially parsing the PDF and cleaning up the resulting data. For cleanup I kept the data as a large JSON array, and used array methods to target the properties within each object. Then I developed a REST API endpoint that enters the data into a POSTGRESQL server. After the API was complete, I designed the frontend using Figma.  "
         }

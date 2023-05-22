@@ -6,7 +6,7 @@ const Technologies = () => {
       </h2>
       <section className="intro mx-4  flex flex-col gap-2 rounded-xl bg-accent-2  p-4 text-lg font-medium text-secondary dark:bg-white   lg:px-16 lg:py-14  ">
         <section className="technologies  ml-[0rem] flex  flex-col gap-6 rounded-lg border-2 border-zinc-200 bg-white  py-12 shadow-lg shadow-zinc-600 dark:border-accent-2  dark:bg-secondary dark:bg-opacity-10 dark:shadow-zinc-600 lg:flex-row lg:gap-0 lg:px-2 lg:py-8 ">
-          <section className="technology-row flex justify-evenly lg:w-full">
+          <section className="technology-row flex w-full justify-evenly">
             <svg
               className="w-[50px] fill-secondary dark:fill-secondary "
               xmlns="http://www.w3.org/2000/svg"

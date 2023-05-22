@@ -6,6 +6,7 @@ import Organizations from "./components/Organizations";
 import Projects from "./components/Projects";
 import Socials from "./components/Socials";
 import Technologies from "./components/Technologies";
+import Unique from "./components/Unique";
 //
 const Page = () => {
   const [dark, setDark] = useState(false);
@@ -22,8 +23,9 @@ const Page = () => {
       </Head>
 
       <Nav dark={dark} setDark={setDark} />
-      <div className="mb-8 px-4 lg:px-24 xl:px-64">
+      <div className="mb-8 flex flex-col px-4 lg:px-24 xl:px-64 ">
         <Hero />
+        <Unique />
         <section className="mt-36 flex flex-col gap-36  overflow-x-hidden  ">
           <Technologies />
           <Projects />
