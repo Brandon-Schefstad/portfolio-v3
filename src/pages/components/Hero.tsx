@@ -27,24 +27,16 @@ const Hero = () => {
   ];
 
   return (
-    <div className="-z-0 flex min-h-full flex-col gap-24 pt-32 text-secondary  dark:text-primaryLight lg:grid lg:grid-cols-7 lg:pt-48">
-      <section className=" ml-4 lg:col-span-4 ">
+    <div className="grid min-h-full gap-24 pl-4 pt-32 text-secondary  dark:text-primaryLight lg:grid lg:grid-cols-7 lg:pt-40">
+      <section className="  lg:col-span-4 ">
         <h1 className=" pr-8  text-left font-heading text-5xl font-bold tracking-wide lg:pr-64 lg:text-left xl:text-6xl">
-          Hello! I am Brandon Schefstad
+          Brandon Schefstad
         </h1>
         <section className=" mt-4 flex  gap-4  lg:mt-8  lg:text-xl ">
-          <button aria-label="refresh" onClick={() => getNewTitle(index)}>
-            <svg
-              className="fill-secondary  dark:fill-primaryLight "
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1024 1024"
-              version="1.1"
-              height={30}
-            >
-              <path d="M512 192a320 320 0 1 0 285.12 465.408 32 32 0 0 1 56.96 29.184 384 384 0 1 1-61.312-436.608l48.64-48.64A32 32 0 0 1 896 224v128a31.872 31.872 0 0 1-32 32h-128a31.872 31.872 0 0 1-22.656-54.656l34.112-34.112A319.616 319.616 0 0 0 512 192z" />
-            </svg>
-          </button>
-          {index != titles.length - 1 ? (
+          <h2 className="  font-heading text-lg lg:text-3xl">
+            {titles[index]}
+          </h2>
+          {/* {index != titles.length - 1 ? (
             <h2 className="  font-heading text-lg lg:text-3xl">
               {titles[index]}
             </h2>
@@ -56,16 +48,22 @@ const Hero = () => {
               {" "}
               {titles[index]}
             </a>
-          )}{" "}
+          )}{" "} */}
         </section>
       </section>
 
-      <Image
-        src={Pfp}
-        alt="Brandon Schefstad laughing"
-        priority={true}
-        className=" self-center px-4  lg:col-span-3 lg:row-span-2 lg:place-self-end lg:rounded-l-lg "
-      ></Image>
+      <section
+        className="row-start-3 self-center bg-secondary px-4 dark:bg-accent-2
+       md:rounded-xl  lg:col-span-3 lg:col-start-5 lg:row-span-2 lg:row-start-1 lg:place-self-end lg:rounded-l-lg"
+      >
+        {" "}
+        <Image
+          src={Pfp}
+          alt="Brandon Schefstad laughing"
+          priority={true}
+          className="  "
+        ></Image>
+      </section>
     </div>
   );
 };
