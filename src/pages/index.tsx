@@ -23,7 +23,7 @@ const Page = () => {
       </Head>
 
       <Nav dark={dark} setDark={setDark} />
-      <div className="mb-8 flex flex-col px-4 lg:px-24 xl:px-64 ">
+      <div className="mb-8 flex flex-col  lg:px-24 xl:px-64 ">
         <Hero />
         <Unique />
         <section className="mt-36 flex flex-col gap-36  overflow-x-hidden  ">

@@ -17,14 +17,14 @@ const Organizations = () => {
   return (
     <section className="flex flex-col gap-12">
       {" "}
-      <h1 className=" col-span-7 ml-4  flex flex-col gap-8 font-heading  text-5xl font-bold text-secondary  dark:text-primaryLight lg:pb-12 lg:text-6xl">
+      <h1 className=" col-span-7 ml-4  flex flex-col gap-8 font-heading   text-5xl font-bold text-secondary  dark:text-primaryLight lg:pb-12 lg:text-6xl">
         Volunteer Work
       </h1>
-      <section className=" relative mx-4 overflow-x-hidden ">
+      <section className=" relative mx-4 overflow-x-hidden rounded-xl ">
         <section
           className={` ${getCurrentOrg(
             currentOrg
-          )}  grid w-[300%] max-w-[300%] grid-cols-3 gap-4 bg-accent-2 p-2 transition-transform duration-[500ms] dark:bg-accent-1 md:max-w-full lg:bg-primaryLight`}
+          )}  grid w-[300%] max-w-[300%] grid-cols-3 gap-4  bg-accent-2 p-2 transition-transform duration-[500ms] dark:bg-accent-1 md:max-w-full lg:bg-primaryLight`}
         >
           <OrganizationCard
             orgName={"Social Justice Hackathon"}
