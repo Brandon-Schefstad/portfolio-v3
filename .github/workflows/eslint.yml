@@ -11,8 +11,6 @@ name: ESLint
 
 on:
   push:
-
-
     branches: [ "main" ]
   pull_request:
     # The branches below must be a subset of the branches above
@@ -22,6 +20,7 @@ on:
 jobs:
   eslint:
     name: Run eslint scanning
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     permissions:
       contents: read
