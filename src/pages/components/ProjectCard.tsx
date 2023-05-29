@@ -32,10 +32,7 @@ const ProjectCard = ({
       <h2 className="rounded-xl   text-3xl font-semibold text-accent-3 lg:px-14  lg:text-4xl">
         {title}
       </h2>
-      <section
-        className="  flex flex-col gap-16 rounded-xl  lg:overflow-hidden lg:p-12 "
-        tabIndex={0}
-      >
+      <section className="  flex flex-col gap-16 rounded-xl  lg:overflow-hidden lg:p-12 ">
         <section className="flex flex-col gap-16 tracking-tight  text-secondary dark:text-primaryLight   lg:col-span-7">
           <section className="mx-2 flex flex-col gap-12 tracking-tighter lg:text-xl lg:tracking-normal">
             <section className="problem flex flex-col gap-4">
@@ -78,30 +75,23 @@ const ProjectCard = ({
               <h3 className="text-2xl font-bold tracking-wide lg:text-3xl">
                 Stack
               </h3>
-              <ul className=" col-span-3 grid w-full  gap-2 bg-primaryLight p-3  text-center text-xs  tracking-[0.015em]  md:grid-cols-3  lg:grid lg:gap-6  lg:px-28  lg:text-center lg:text-xl">
+              <ul className=" col-span-3 grid grid  w-full grid-cols-2 justify-between gap-2 gap-6  bg-primaryLight p-3  text-center text-xs  tracking-[0.015em]  md:grid-cols-3  lg:grid lg:gap-6  lg:px-28  lg:text-center lg:text-xl">
                 {tech ? (
                   tech.map((techTool, index) => {
                     return index % 2 === 0 ? (
-                      <div className="grid grid-cols-2  justify-between gap-6">
-                        <li
-                          key={index}
-                          className="rounded-md border-2  border-solid  border-secondary  bg-accent-1 py-2 font-bold text-secondary dark:bg-primaryLight dark:text-secondary"
-                        >
-                          {techTool}
-                        </li>
-                        {tech[index + 1] ? (
-                          <li
-                            key={index + 1}
-                            className="rounded-md border-2  border-solid  border-secondary  bg-accent-1 py-2 font-bold text-secondary dark:bg-primaryLight dark:text-secondary"
-                          >
-                            {tech[index + 1]}
-                          </li>
-                        ) : (
-                          <></>
-                        )}
-                      </div>
+                      <li
+                        key={index}
+                        className="rounded-md border-2  border-solid  border-secondary  bg-accent-1 py-2 font-bold text-secondary dark:bg-primaryLight dark:text-secondary"
+                      >
+                        {techTool}
+                      </li>
                     ) : (
-                      <></>
+                      <li
+                        key={index}
+                        className="rounded-md border-2  border-solid  border-secondary  bg-accent-1 py-2 font-bold text-secondary dark:bg-primaryLight dark:text-secondary"
+                      >
+                        {techTool}
+                      </li>
                     );
                   })
                 ) : (
@@ -116,7 +106,7 @@ const ProjectCard = ({
               Gallery
             </h2>
             {sources.map((src, i) => {
-              return <ImageModel src={src} alt={"hello"} />;
+              return <ImageModel src={src} alt={"hello"} key={i} />;
             })}
           </section>
         </section>

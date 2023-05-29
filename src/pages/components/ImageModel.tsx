@@ -4,7 +4,7 @@ import { useState } from "react";
 const ImageModel = ({ src, alt }: { src: string; alt: string }) => {
   const [enlarged, setEnlarged] = useState(false);
   return (
-    <section
+    <button
       onClick={() => setEnlarged(!enlarged)}
       className=" border-2 border-solid border-secondary     "
     >
@@ -25,7 +25,7 @@ const ImageModel = ({ src, alt }: { src: string; alt: string }) => {
           src={src}
         ></Image>
       </section> */}
-    </section>
+    </button>
   );
 };
 
