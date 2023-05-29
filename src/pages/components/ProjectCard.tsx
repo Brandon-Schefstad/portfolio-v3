@@ -32,10 +32,7 @@ const ProjectCard = ({
       <h2 className="rounded-xl   text-3xl font-semibold text-accent-3 lg:px-14  lg:text-4xl">
         {title}
       </h2>
-      <section
-        className="  flex flex-col gap-16 rounded-xl  lg:overflow-hidden lg:p-12 "
-        tabIndex={0}
-      >
+      <section className="  flex flex-col gap-16 rounded-xl  lg:overflow-hidden lg:p-12 ">
         <section className="flex flex-col gap-16 tracking-tight  text-secondary dark:text-primaryLight   lg:col-span-7">
           <section className="mx-2 flex flex-col gap-12 tracking-tighter lg:text-xl lg:tracking-normal">
             <section className="problem flex flex-col gap-4">
