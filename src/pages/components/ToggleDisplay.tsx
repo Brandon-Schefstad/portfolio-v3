@@ -4,27 +4,22 @@ const ToggleDisplay = ({ dark, setDark }) => {
     /* eslint @typescript-eslint/no-unsafe-return: "off", @typescript-eslint/no-unsafe-call: "off" */
     <button className="grid" onClick={() => setDark(!dark)}>
       {dark ? (
-        <>
-          <button
-            aria-label="currently dark mode"
-            onClick={() => setDark(!dark)}
+        <button aria-label="currently dark mode" onClick={() => setDark(!dark)}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="shadow-bg- relative rounded-full border-2 border-solid border-black  pl-1  pt-1 shadow-sm active:top-1 active:shadow-none dark:border-black dark:bg-zinc-200 dark:fill-yellow-400  dark:stroke-black "
+            width="38"
+            height="38"
+            fill="none"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="shadow-bg- relative rounded-full border-2 border-solid border-black  pl-1  pt-1 shadow-sm active:top-1 active:shadow-none dark:border-black dark:bg-zinc-200 dark:fill-yellow-400  dark:stroke-black "
-              width="38"
-              height="38"
-              fill="none"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M21.933 13.111a9 9 0 1 1-9.79-9.79 7 7 0 0 0 9.79 9.79Z"
-              />
-            </svg>
-          </button>
-        </>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M21.933 13.111a9 9 0 1 1-9.79-9.79 7 7 0 0 0 9.79 9.79Z"
+            />
+          </svg>
+        </button>
       ) : (
         <>
           <button

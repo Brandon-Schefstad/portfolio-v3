@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useState } from "react";
 import favicon from "../../public/favicon2.ico";
 import Hero from "./components/Hero";
@@ -35,12 +36,12 @@ const Page = () => {
           <Socials />
         </section>
       </div>
-      <link
-        href="#"
+      <Link
+        href="/#"
         className="absolute bottom-8 left-8 flex text-secondary underline dark:text-primaryLight"
       >
         <span className="text-center ">Return To Top</span>
-      </link>
+      </Link>
     </div>
   );
 };
