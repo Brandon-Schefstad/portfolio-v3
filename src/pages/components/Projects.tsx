@@ -19,11 +19,18 @@ const Projects = () => {
         id={1}
         title={"Blackstaff Spell Emporium (WIP)"}
         problem={
-          "My Dungeons and Dragons group wanted to incorporate a list of spells (roughly 900 of them) that only came in a pdf. The catch? The spells were organized in alphabetical order, and did not tell you which class could take it!   "
+          "My Dungeons and Dragons group wanted to use an expanded list of spells, but the spells were listed in two sections which made researching very tedious and time-consuming.  "
         }
-        tech={["NextJS", "Typescript", "PrismaORM", "Figma", "PostgreSQL"]}
+        tech={[
+          "NextJS",
+          "Typescript",
+          "PrismaORM",
+          "Figma",
+          "PostgreSQL",
+          "Vitest",
+        ]}
         solution={
-          "This site organizes all of those spells by player class. This way users can more quickly identify what spells are avaialble to them without needing to scroll through the PDF back and forth.  Seeding the database involved initially parsing the PDF and cleaning up the resulting data. For cleanup I kept the data as a large JSON array, and used array methods to target the properties within each object. Then I developed a REST API endpoint that enters the data into a POSTGRESQL server. After the API was complete, I designed the frontend using Figma.  "
+          "This site organizes all of those spells by character class. This way users can more quickly identify what spells are avaialble to their character without needing to scroll through 400 PDF pages.  Seeding the database involved initially parsing the PDF and cleaning up the resulting data through automated testing. I kept the data as a large array of JSON objects, and used array methods to target and modify the properties within each object. Then I developed a REST API endpoint that enters the data into a POSTGRESQL server. After the API was complete, I designed the frontend using Figma, connected frontend to backend, and used static site generation for a more snappy user experience.  "
         }
         src1={blackstaff2.src}
         src2={blackstaff1.src}
@@ -37,7 +44,7 @@ const Projects = () => {
         problem={
           "All students with a disability in America are given case management services by the school. Part of this involves creating an IEP (Individualized Education Plan). This is a lengthy legal document detailing the student's current progress, accommodations, and future goals. Case managers (often teachers themselves) are responsible for communicating this IEP to all relevant personnel. This is very time-consuming, and it ate away at much of my time my first year teaching. I wanted to come up with a solution."
         }
-        tech={["MongoDb", " React", "Express", "NodeJS", "Figma", "Tailwind"]}
+        tech={["MongoDb", "Express", "React", "NodeJS", "Figma", "Tailwind"]}
         solution={
           "Using MERN stack, I developed a fullstack application where case managers can create student profiles, search the current database, and modify student accommodations. This allows the case manager to input information once. Other personnel can search for the data they need."
         }
