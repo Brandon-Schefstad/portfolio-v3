@@ -2,7 +2,12 @@
 const ToggleDisplay = ({ dark, setDark }) => {
   return (
     /* eslint @typescript-eslint/no-unsafe-return: "off", @typescript-eslint/no-unsafe-call: "off" */
-    <button className="grid" onClick={() => setDark(!dark)}>
+
+    <button
+      id="nav"
+      className="nav  gap:4 relative  mx-8 flex  items-center gap-8 pb-4  pt-8 font-bold  text-secondary dark:border-accent-3  dark:text-secondary  sm:flex-row sm:items-end md:gap-12  lg:flex-row lg:gap-20 lg:px-32 lg:text-xl"
+      onClick={() => setDark(!dark)}
+    >
       {dark ? (
         <button aria-label="currently dark mode" onClick={() => setDark(!dark)}>
           <svg

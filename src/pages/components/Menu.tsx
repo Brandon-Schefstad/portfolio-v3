@@ -1,6 +1,6 @@
 const Menu = () => {
   return (
-    <section className="    flex  justify-evenly rounded-xl  bg-accent-2 fill-accent-3 p-4 dark:bg-accent-1 ">
+    <section className="    flex  justify-between rounded-xl  bg-accent-2 fill-accent-3 p-4 dark:bg-accent-1 ">
       <a href="https://www.google.com" aria-label="My Twitter" className="  ">
         <svg
           clipRule="evenodd"

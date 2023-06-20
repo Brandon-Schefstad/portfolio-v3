@@ -1,36 +1,60 @@
-import { useState } from "react";
-
-import ToggleDisplay from "./ToggleDisplay";
-
 const Nav = ({ dark, setDark }: { dark: boolean; setDark: any }) => {
-  /* eslint @typescript-eslint/no-unsafe-assignment:off */
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <section
+    /* eslint @typescript-eslint/no-unsafe-return: "off", @typescript-eslint/no-unsafe-call: "off" */
+
+    <button
       id="nav"
-      className="nav  gap:4 relative  mx-8 flex flex-col items-start gap-8 border-b-2 border-solid border-accent-1 pb-4 font-bold  text-secondary dark:border-accent-3  dark:text-secondary  sm:flex-row sm:items-end md:gap-12  lg:flex-row lg:gap-20 lg:px-32 lg:text-xl"
+      className="nav  gap:4 relative   flex  items-center gap-8 pb-4  pt-8 font-bold  text-secondary dark:border-accent-3  dark:text-secondary  sm:flex-row sm:items-end md:gap-12  lg:flex-row lg:gap-20 lg:px-32 lg:text-xl"
+      onClick={() => setDark(!dark)}
     >
-      <ToggleDisplay dark={dark} setDark={setDark} />
-
-      <section className=" text-md flex w-full items-end  justify-between px-0  tracking-wider sm:text-lg md:pr-12 lg:pr-24 xl:pr-32">
-        <a
-          tabIndex={0}
-          href="mailto:bschefstad@gmail.com"
-          className="rounded-xl border-2 border-solid bg-highlight  p-2 dark:border-highlight dark:bg-secondary  dark:text-highlight md:px-4 md:py-2"
-        >
-          Email Me
-        </a>
-
-        <div className="divider divider-horizontal"></div>
-        <a
-          tabIndex={0}
-          href="./public/assets/Brandon Schefstad - Resume.pdf"
-          className="rounded-xl border-2 border-solid bg-highlight  p-2 dark:border-highlight dark:bg-secondary  dark:text-highlight md:px-4 md:py-2"
-        >
-          See My Resume
-        </a>
-      </section>
-    </section>
+      {dark ? (
+        <button aria-label="currently dark mode" onClick={() => setDark(!dark)}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="shadow-bg- relative rounded-full border-2 border-solid border-black  pl-1  pt-1 shadow-sm active:top-1 active:shadow-none dark:border-black dark:bg-zinc-200 dark:fill-yellow-400  dark:stroke-black "
+            width="38"
+            height="38"
+            fill="none"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M21.933 13.111a9 9 0 1 1-9.79-9.79 7 7 0 0 0 9.79 9.79Z"
+            />
+          </svg>
+        </button>
+      ) : (
+        <>
+          <button
+            aria-label="currently light mode "
+            onClick={() => setDark(!dark)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="  relative rounded-full border-2 border-solid border-black bg-zinc-200 fill-yellow-400 stroke-black  pl-1 pt-1 active:top-1 active:shadow-none dark:border-black dark:bg-white dark:fill-yellow-400 dark:stroke-black dark:shadow-sm dark:shadow-black"
+              width="38"
+              height="38"
+              fill="none"
+            >
+              <g
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                clipPath="url(#a)"
+              >
+                <path d="M12.934 17.321a5 5 0 1 0 0-10 5 5 0 0 0 0 10ZM12.934 1.321v2M12.934 21.321v2M5.153 4.541l1.42 1.42M19.294 18.681l1.42 1.42M1.934 12.321h2M21.934 12.321h2M5.153 20.101l1.42-1.42M19.294 5.961l1.42-1.42" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.934.321h24v24h-24z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </>
+      )}
+    </button>
   );
 };
 

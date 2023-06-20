@@ -4,7 +4,6 @@ import { useState } from "react";
 import favicon from "../../public/favicon2.ico";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
-import Organizations from "./components/Organizations";
 import Projects from "./components/Projects";
 import Socials from "./components/Socials";
 import Technologies from "./components/Technologies";
@@ -15,7 +14,7 @@ const Page = () => {
 
   return (
     <div
-      className={` relative m-auto min-h-screen overflow-x-hidden  pb-16 pt-8  ${
+      className={` relative m-auto min-h-screen overflow-x-hidden  px-4 pb-16 pt-8 ${
         dark ? "bg-secondary" : "bg-primaryLight"
       }  ${dark ? " dark" : ""}`}
     >
@@ -32,13 +31,13 @@ const Page = () => {
           <Technologies />
           <Projects />
 
-          <Organizations />
+          {/* <Organizations /> */}
           <Socials />
         </section>
       </div>
       <Link
         href="/#"
-        className="absolute bottom-8 left-8 flex text-secondary underline dark:text-primaryLight"
+        className="absolute bottom-8 left-4 flex text-secondary underline dark:text-primaryLight"
       >
         <span className="text-center ">Return To Top</span>
       </Link>

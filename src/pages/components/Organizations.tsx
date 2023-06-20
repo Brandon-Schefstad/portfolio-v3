@@ -17,10 +17,10 @@ const Organizations = () => {
   return (
     <section className="flex flex-col gap-12">
       {" "}
-      <h1 className=" col-span-7 ml-4  flex flex-col gap-8 font-heading   text-5xl font-bold text-secondary  dark:text-primaryLight lg:pb-12 lg:text-6xl">
+      <h1 className=" col-span-7   flex flex-col gap-8 font-heading   text-5xl font-bold text-secondary  dark:text-primaryLight lg:pb-12 lg:text-6xl">
         Volunteer Work
       </h1>
-      <section className=" relative mx-4 overflow-x-hidden rounded-xl ">
+      <section className=" relative  overflow-x-hidden rounded-xl ">
         <section
           className={` ${getCurrentOrg(
             currentOrg
@@ -54,7 +54,7 @@ const Organizations = () => {
           }
           className={`btn ${currentOrg === 0 ? "btn-disabled" : ""} md:hidden`}
         >
-          Left
+          Prev
         </button>
         <button
           onClick={() =>
@@ -62,7 +62,7 @@ const Organizations = () => {
           }
           className={`btn ${currentOrg === 2 ? "btn-disabled" : ""} md:hidden`}
         >
-          Right
+          Next
         </button>
       </section>
     </section>

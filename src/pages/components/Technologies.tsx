@@ -1,10 +1,10 @@
 const Technologies = () => {
   return (
     <section className="min-w-full">
-      <h2 className=" ml-4 pb-12 font-heading  text-5xl font-bold  text-secondary dark:text-primaryLight lg:text-6xl">
+      <h2 className="  pb-12 font-heading  text-5xl font-bold  text-secondary dark:text-primaryLight lg:text-6xl">
         Technologies
       </h2>
-      <section className="intro mx-4  flex flex-col gap-2 rounded-xl bg-accent-2  p-6 text-lg font-medium text-secondary dark:bg-white   lg:px-16 lg:py-14  ">
+      <section className="intro   flex flex-col gap-2 rounded-xl bg-accent-2  p-6 text-lg font-medium text-secondary dark:bg-white   lg:px-16 lg:py-14  ">
         <section className="technologies  ml-[0rem] flex  flex-col gap-6 rounded-lg border-2 border-zinc-200 bg-primaryLight  py-12 shadow-lg shadow-zinc-600 dark:border-accent-2  dark:bg-secondary dark:bg-opacity-10 dark:shadow-zinc-600 lg:flex-row lg:gap-0 lg:px-2 lg:py-8 ">
           <section className="technology-row flex w-full justify-evenly">
             <svg
