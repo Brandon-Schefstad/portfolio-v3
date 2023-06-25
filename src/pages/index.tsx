@@ -15,7 +15,7 @@ const Page = () => {
   return (
     <div
       className={` relative m-auto min-h-screen overflow-x-hidden  px-4 pb-16 pt-8 ${
-        dark ? "bg-secondary" : "bg-primaryLight"
+        dark ? "bg-primary" : "bg-secondary"
       }  ${dark ? " dark" : ""}`}
     >
       <Head>
@@ -24,20 +24,19 @@ const Page = () => {
       </Head>
 
       <Nav dark={dark} setDark={setDark} />
-      <div className="mb-8 flex flex-col  lg:px-24 xl:px-64 ">
+      <div className=" flex flex-col gap-24  lg:px-24 xl:px-64 ">
         <Hero />
         <Unique />
-        <section className="mt-36 flex flex-col gap-36  overflow-x-hidden  ">
-          <Technologies />
-          <Projects />
 
-          {/* <Organizations /> */}
-          <Socials />
-        </section>
+        <Projects />
+        <Technologies />
+
+        {/* <Organizations /> */}
+        <Socials />
       </div>
       <Link
         href="/#"
-        className="absolute bottom-8 left-4 flex text-secondary underline dark:text-primaryLight"
+        className="dark:text-primaryLight absolute bottom-8 left-4 flex text-secondary underline"
       >
         <span className="text-center ">Return To Top</span>
       </Link>

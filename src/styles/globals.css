@@ -19,3 +19,60 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.h1 {
+  font-size: 3rem;
+  font-family: "FONTSPRING DEMO - Proxima Nova Black";
+  font-weight: 900;
+  line-height: 3rem;
+}
+.h2 {
+  font-size: 1.75rem;
+  font-family: "FONTSPRING DEMO - Proxima Nova";
+  font-weight: 800;
+  letter-spacing: 0.04125rem;
+}
+.project-header {
+  font-size: 1.5rem;
+  font-family: "FONTSPRING DEMO - Proxima Nova";
+  font-weight: 500;
+}
+.h3 {
+  font-size: 1.5rem;
+  font-family: "FONTSPRING DEMO - Proxima Nova";
+  font-weight: 300;
+  letter-spacing: 0.075rem;
+  text-decoration: underline;
+}
+
+.body {
+  font-size: 1rem;
+  font-family: "Arial";
+  font-weight: 300;
+}
+.body-light {
+  font-size: 1rem;
+  font-family: "FONTSPRING DEMO - Proxima Nova Light";
+  font-weight: 300;
+}
+
+.button-text {
+  font-size: 1.25rem;
+  font-family: "FONTSPRING DEMO - Proxima Nova";
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+.button-text-small {
+  font-size: 0.75rem;
+  font-family: "FONTSPRING DEMO - Proxima Nova";
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+.tech-text {
+  font-size: 0.75rem;
+  font-family: "FONTSPRING DEMO - Proxima Nova";
+  font-style: italic;
+  text-transform: capitalize;
+}

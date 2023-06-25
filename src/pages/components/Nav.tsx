@@ -1,14 +1,12 @@
 const Nav = ({ dark, setDark }: { dark: boolean; setDark: any }) => {
   return (
     /* eslint @typescript-eslint/no-unsafe-return: "off", @typescript-eslint/no-unsafe-call: "off" */
-
-    <button
-      id="nav"
-      className="nav  gap:4 relative   flex  items-center gap-8 pb-4  pt-8 font-bold  text-secondary dark:border-accent-3  dark:text-secondary  sm:flex-row sm:items-end md:gap-12  lg:flex-row lg:gap-20 lg:px-32 lg:text-xl"
-      onClick={() => setDark(!dark)}
-    >
+    <>
       {dark ? (
-        <button aria-label="currently dark mode" onClick={() => setDark(!dark)}>
+        <button
+          aria-label="change to light mode"
+          onClick={() => setDark(!dark)}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="shadow-bg- relative rounded-full border-2 border-solid border-black  pl-1  pt-1 shadow-sm active:top-1 active:shadow-none dark:border-black dark:bg-zinc-200 dark:fill-yellow-400  dark:stroke-black "
@@ -27,7 +25,7 @@ const Nav = ({ dark, setDark }: { dark: boolean; setDark: any }) => {
       ) : (
         <>
           <button
-            aria-label="currently light mode "
+            aria-label="change to dark mode "
             onClick={() => setDark(!dark)}
           >
             <svg
@@ -54,7 +52,7 @@ const Nav = ({ dark, setDark }: { dark: boolean; setDark: any }) => {
           </button>
         </>
       )}
-    </button>
+    </>
   );
 };
 

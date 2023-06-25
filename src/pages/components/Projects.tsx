@@ -9,22 +9,22 @@ import ProjectCard from "./ProjectCard";
 //@ts-nocheck
 const Projects = () => {
   return (
-    <section className="flex flex-col gap-12">
+    <section className="flex flex-col gap-4">
       {" "}
-      <h1 className=" col-span-7   flex flex-col  font-heading  text-5xl font-bold text-secondary dark:text-primaryLight lg:pb-12 lg:text-6xl">
+      <h1 className=" h2 dark:text-primaryLight   col-span-7 flex  flex-col  font-heading font-bold text-primary dark:text-secondary lg:pb-12 lg:text-6xl">
         Projects
       </h1>
       {/* ESEAAG */}
       <ProjectCard
         id={1}
-        title={"Blackstaff Spell Emporium (WIP)"}
+        title={"Blackstaff Spell Emporium"}
         problem={
           "My Dungeons and Dragons group wanted to use an expanded list of spells, but the spells were listed in two sections which made researching very tedious and time-consuming.  "
         }
         tech={[
           "NextJS",
           "Typescript",
-          "PrismaORM",
+          "Prisma",
           "Figma",
           "PostgreSQL",
           "Vitest",
@@ -35,8 +35,8 @@ const Projects = () => {
         src1={blackstaff2.src}
         src2={blackstaff1.src}
         src3={blackstaff3.src}
-        liveLink={"https://ese-at-a-glance.netlify.app/"}
-        repoLink={"https://github.com/Brandon-Schefstad/ESEAtAGlance"}
+        liveLink={"https://blackstaff.vercel.app/"}
+        repoLink={"https://github.com/Brandon-Schefstad/blackstaff-fullstack"}
       />
       <ProjectCard
         id={2}

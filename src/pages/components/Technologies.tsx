@@ -1,14 +1,14 @@
 const Technologies = () => {
   return (
     <section className="min-w-full">
-      <h2 className="  pb-12 font-heading  text-5xl font-bold  text-secondary dark:text-primaryLight lg:text-6xl">
+      <h2 className=" h2   text-primary dark:text-secondary lg:text-6xl">
         Technologies
       </h2>
-      <section className="intro   flex flex-col gap-2 rounded-xl bg-accent-2  p-6 text-lg font-medium text-secondary dark:bg-white   lg:px-16 lg:py-14  ">
-        <section className="technologies  ml-[0rem] flex  flex-col gap-6 rounded-lg border-2 border-zinc-200 bg-primaryLight  py-12 shadow-lg shadow-zinc-600 dark:border-accent-2  dark:bg-secondary dark:bg-opacity-10 dark:shadow-zinc-600 lg:flex-row lg:gap-0 lg:px-2 lg:py-8 ">
+      <section className="intro   flex flex-col gap-2 rounded-xl bg-secondary  p-6 text-lg font-medium text-secondary dark:bg-primary  lg:px-16 lg:py-14  ">
+        <section className="technologies  bg-primaryLight dark:shadow-darkAccent  ml-[0rem] flex flex-col gap-6 rounded-lg border-2  border-zinc-200 py-12 shadow-lg shadow-accent  dark:border-primary dark:bg-secondary dark:bg-opacity-10 lg:flex-row lg:gap-0 lg:px-2 lg:py-8 ">
           <section className="technology-row flex w-full justify-evenly">
             <svg
-              className="w-[50px] fill-secondary dark:fill-secondary "
+              className="w-[50px] fill-primary dark:fill-secondary "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -17,7 +17,7 @@ const Technologies = () => {
               <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
             </svg>
             <svg
-              className="w-[50px] fill-secondary dark:fill-secondary "
+              className="w-[50px] fill-primary dark:fill-secondary "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -25,7 +25,7 @@ const Technologies = () => {
               <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
             </svg>
             <svg
-              className="w-[50px] fill-secondary dark:fill-secondary "
+              className="w-[50px] fill-primary dark:fill-secondary "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -36,7 +36,7 @@ const Technologies = () => {
           <section className="technology-row flex w-full justify-evenly">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[50px] fill-secondary dark:fill-secondary "
+              className="w-[50px] fill-primary dark:fill-secondary "
               viewBox="0 0 24 24"
             >
               <title>React</title>
@@ -44,7 +44,7 @@ const Technologies = () => {
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[50px] fill-secondary dark:fill-secondary "
+              className="w-[50px] fill-primary dark:fill-secondary "
               viewBox="0 0 24 24"
             >
               <title>Node.JS</title>
@@ -52,7 +52,7 @@ const Technologies = () => {
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[50px] fill-secondary dark:fill-secondary "
+              className="w-[50px] fill-primary dark:fill-secondary "
               viewBox="0 0 24 24"
             >
               <title>Next.JS</title>
@@ -62,7 +62,7 @@ const Technologies = () => {
           <section className="technology-row flex w-full justify-evenly">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[50px] fill-secondary dark:fill-secondary "
+              className="w-[50px] fill-primary dark:fill-secondary "
               viewBox="0 0 24 24"
             >
               <title>Figma</title>
@@ -70,7 +70,7 @@ const Technologies = () => {
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[50px] fill-secondary dark:fill-secondary "
+              className="w-[50px] fill-primary dark:fill-secondary "
               viewBox="0 0 24 24"
             >
               <title>TailwindCSS</title>
@@ -78,7 +78,7 @@ const Technologies = () => {
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[50px] fill-secondary dark:fill-secondary "
+              className="w-[50px] fill-primary dark:fill-secondary "
               viewBox="0 0 24 24"
             >
               <title>Jest</title>
